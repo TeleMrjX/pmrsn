@@ -96,63 +96,6 @@ function save($filename,$TXTdata)
 	}
 
 //------------
-if($textmassage=="/start"){
-        sendAction($chat_id, 'typing');
-	MrPHPBot('sendmessage',[
-	'chat_id'=>$chat_id,
-	'text'=>"` 🎗 سلام به ربات آقای ریلود خوش آمدید!
-لطفا زبان خود را انتخاب کنید : 
-—-------------------------------
-Languages : 🇮🇷 🇬🇧
---------------------------------
-🎗Welcome To MrReloadBot
-Please Select Your Language :`",
-        'parse_mode'=>'MarkDown',
-	'reply_markup'=>json_encode([
-	'resize_keyboard'=>true,
-	'keyboard'=>[
-	[
-	['text'=>"English 🇬🇧"],['text'=>"فارسی 🇮🇷"]
-	],
-	]
-	])
-	
-	]);
-	
-	
-	}elseif($textmassage=="تغییر زبان ⚓️"){
-        sendAction($chat_id, 'typing');
-	MrPHPBot('sendmessage',[
-	'chat_id'=>$chat_id,
-	'text'=>"لطفا زبان خود را انتخاب کنید :",
-	'reply_markup'=>json_encode([
-	'resize_keyboard'=>true,
-	'keyboard'=>[
-	[
-	['text'=>"English 🇬🇧"],['text'=>"فارسی 🇮🇷"]
-	],
-	]
-	])
-	
-	]);
-	
-	
-	}elseif($textmassage=="Change language ⚓️"){
-        sendAction($chat_id, 'typing');
-	MrPHPBot('sendmessage',[
-	'chat_id'=>$chat_id,
-	'text'=>"Please choose your language :",
-	'reply_markup'=>json_encode([
-	'resize_keyboard'=>true,
-	'keyboard'=>[
-	[
-	['text'=>"English 🇬🇧"],['text'=>"فارسی 🇮🇷"]
-	],
-	]
-	])
-	
-	]);
-	
 if($textmessage == '/start')
  if ($from_id == $admin) {
 var_dump(makereq('sendMessage',[
