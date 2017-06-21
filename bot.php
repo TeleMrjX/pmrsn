@@ -1,6 +1,6 @@
 <?php
 
-define('API_KEY','');
+define('API_KEY','347284457:AAEsEdwqxyz7QAvX2FGJW-oXcNf5pm2a0hM');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -63,7 +63,7 @@ $file = $update->message->document;
 $music = $update->message->audio;
 $voice = $update->message->voice;
 $forward = $update->message->forward_from;
-$admin = 193930120;
+$admin = 193156389;
 //-------
 function SendMessage($ChatId, $TextMsg)
 {
@@ -100,12 +100,12 @@ if($textmassage=="/start"){
         sendAction($chat_id, 'typing');
 	MrPHPBot('sendmessage',[
 	'chat_id'=>$chat_id,
-	'text'=>"` 🎗سلام به ربات اقای پی اچ پی خوش آمدید
+	'text'=>"` 🎗 سلام به ربات آقای ریلود خوش آمدید!
 لطفا زبان خود را انتخاب کنید : 
 —-------------------------------
 Languages : 🇮🇷 🇬🇧
 --------------------------------
-🎗Welcome To MrPHPBot
+🎗Welcome To MrReloadBot
 Please Select Your Language :`",
         'parse_mode'=>'MarkDown',
 	'reply_markup'=>json_encode([
